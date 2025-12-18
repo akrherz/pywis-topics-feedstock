@@ -1,13 +1,13 @@
 {% set name = "pywis-topics" %}
-{% set version = "0.3.5" %}
+{% set version = "0.3.6" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pywis-topics-{{ version }}.tar.gz
-  sha256: b8d21d80c02f4d8c64b3ca3bf3c9d405f5ad3c06c10b918e4ccb9619fa567c1b
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 797f43ea077891cf55f55bec1f7dfcaa5273312f1ef6ad38b87bc271286ecf76
 
 build:
   entry_points:
